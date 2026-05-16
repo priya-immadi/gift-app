@@ -1,0 +1,71 @@
+/* Overall page styling */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Center the form container */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+/* Card-like form appearance */
+.col-md-4 {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Labels styling */
+.form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Input field design */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+/* Input focus effect */
+.form-control:focus {
+  border-color: #28a745;
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+}
+
+/* Button styling */
+button.btn {
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+/* Button hover effect */
+button.btn-success:hover {
+  background-color: #218838;
+  transform: scale(1.03);
+}
+
+/* Responsive layout for smaller devices */
+@media (max-width: 768px) {
+  .col-md-4 {
+    padding: 25px;
+    max-width: 90%;
+  }
+}

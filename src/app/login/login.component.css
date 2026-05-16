@@ -1,0 +1,204 @@
+.landing-container {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://png.pngtree.com/thumb_back/fh260/background/20231118/pngtree-black-floating-three-dimensional-shopping-box-gift-box-black-friday-promotion-image_14443997.jpg')
+              no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+p{
+  font-size: 22px;
+  font-weight: bold;
+}
+header button {
+  background-color: #2856ec;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-left: 30px;
+  
+
+}
+
+
+.hero {
+  margin-top: 150px;
+}
+
+.hero h2 {
+  font-size: 30px;
+  margin-top: 350px;
+  color: white;
+  font-weight: bolder;
+}
+
+.hero button {
+  background: #dbe5e2;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  color: #333;
+  padding: 30px;
+  width: 320px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.modal-content input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #2856ec;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #444;
+}
+
+
+.message {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  margin: 10px auto;
+  width: fit-content;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content{
+  width: 350px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.credentials-fixed{
+  position: fixed;
+  top: 50%;
+  left: 180px;
+  transform: translateY(-50%);
+
+  width: 250px;
+  background: #ff4081;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cred-box{
+  margin-top: 15px;
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.close{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button{
+  padding: 10px;
+  border: none;
+  background: #ff4081;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

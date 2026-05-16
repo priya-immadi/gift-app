@@ -1,0 +1,111 @@
+<!-- <div class="landing-container">
+  <header>
+    <h1>Spreading Smiles,One Gift at a Time</h1>
+    <button (click)="openLogin()">Login</button>
+  </header>
+
+  <section class="hero">
+    <h2>Gifting Made Simple and Special</h2>
+    <p>Send joy to your loved ones with the perfect gift🎁</p>
+  </section>
+
+  
+  <div class="message" *ngIf="message">
+    {{ message }}
+  </div>
+
+  
+  <div class="modal" *ngIf="showLogin">
+    <div class="modal-content">
+      <span class="close" (click)="closeLogin()">&times;</span>
+      <h2>Login</h2>
+      <form [formGroup]="loginForm" (ngSubmit)="checkLogin()">
+
+        <label>Username</label>
+        <input type="text" formControlName="username" placeholder="Enter username">
+
+        <label>Password</label>
+        <input type="password" formControlName="password" placeholder="Enter password">
+
+        
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+ -->
+
+
+ <div class="landing-container">
+
+  <header>
+    <h1>Spreading Smiles, One Gift at a Time</h1>
+    <button (click)="openLogin()">Login</button>
+  </header>
+
+  <section class="hero">
+    <h2>Gifting Made Simple and Special</h2>
+    <p>Send joy to your loved ones with the perfect gift 🎁</p>
+  </section>
+
+  <div class="message" *ngIf="message">
+    {{ message }}
+  </div>
+
+  
+  <div class="credentials-fixed" *ngIf="showLogin">
+
+    <h3>Demo Credentials</h3>
+
+    <div class="cred-box">
+      <h4>Admin</h4>
+      <p>Username: admin</p>
+      <p>Password: 123</p>
+    </div>
+
+    <div class="cred-box">
+      <h4>User</h4>
+      <p>Username: priya</p>
+      <p>Password: pri123</p>
+    </div>
+
+  </div>
+
+  
+  <div class="modal" *ngIf="showLogin">
+
+    <div class="modal-content">
+
+      <span class="close" (click)="closeLogin()">&times;</span>
+
+      <h2>Login</h2>
+
+      <form [formGroup]="loginForm" (ngSubmit)="checkLogin()">
+
+        <label>Username</label>
+
+        <input
+          type="text"
+          formControlName="username"
+          placeholder="Enter username"
+        >
+
+        <label>Password</label>
+
+        <input
+          type="password"
+          formControlName="password"
+          placeholder="Enter password"
+        >
+
+        <button type="submit">Login</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,29 @@
+<div class="row" *ngIf="wishitems.length!=0; else elseBlock">
+    <div class="col-md-10">
+        <table class="table table-bordered">
+            <tr>
+                <th>Sno</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Image</th>
+                <th>Actions</th>
+            </tr>
+            <tr *ngFor="let w of wishitems; let i=index">
+                <th>{{i+1}}</th>
+                <th>{{w.productName}}</th>
+                <th>{{w.productprice}}</th>
+                <th><img [src]="w.productImg" height="200" width="200" alt="" class="img-fluid"></th>
+                <th>
+                    <button class="btn btn-danger" (click)="deleteitem(w.productId)"><i
+                            class="fa fa-times"></i>Remove</button>
+                    <button class="btn btn-sucess" (click)="addnow(w)"><i class="fa fa-shopping-cart"></i>Add to
+                        Cart</button>
+                </th>
+            </tr>
+        </table>
+    </div>
+</div>
+<ng-template #elseBlock>
+    <p>wishlist is Empty</p>
+</ng-template>
+

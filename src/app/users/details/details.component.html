@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-3">
+        <img [src]="laptop.productImg" class="img-fluid" height="200" alt="">
+    </div>
+    <div class="col-md-9">
+        <h1>{{laptop.productName}}</h1>
+        <div>
+            <p>{{laptop.productDescription}}</p>
+        </div>
+        <div>
+            <p>Price : {{laptop.productprice | currency:"INR"}}</p>
+        </div>
+        <div>
+            <button class="btn btn-warning" (click)="wishnow()">
+                <i class="fa fa-heart text-white"></i>Wishlist
+            </button>
+            <button class="btn btn-primary" (click)="addnow()">
+                <i class="fa fa-shopping-cart"></i>Add to Cart
+            </button>
+        </div>
+    </div>
+</div>

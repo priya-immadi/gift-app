@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-2">
+        <nav class="navbar navbar-dark bg-dark  mynav">
+          <a href="" class="navbar-brand">welcome {{username}}</a>
+            <ul class="navbar-nav navelements">
+                <li class="nav-item"><a routerLink="/user/view" class="nav-link">View Products</a></li>
+                <li class="nav-item"><a routerLink="/user/orders" class="nav-link">View Orders</a></li>
+                <li class="nav-item"><a routerLink="/user/cart" class="nav-link">Cart <span class="badge bg-danger">{{cartlen}}</span></a></li>
+                <li class="nav-item"><a routerLink="/user/wishlist" class="nav-link">Wishlist</a></li>
+                <li class="nav-item">
+                    <a (click)="logout()" class="nav-link"><i class="fa fa-signout">Logout</i></a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="col-md-10">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
